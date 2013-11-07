@@ -1,15 +1,15 @@
 include ../../config/page.jade
 doctype 5
 //if lt IE7
-html.lt-ie6(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
+html.lt-ie6(lang="#{page.lang}", xmlns:fb="http://ogp.me/ns/fb#")
 //if IE 7
-html.lt-ie7(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
+html.lt-ie7(lang="#{page.lang}", xmlns:fb="http://ogp.me/ns/fb#")
 //if IE 8
-html.lt-ie8(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
+html.lt-ie8(lang="#{page.lang}", xmlns:fb="http://ogp.me/ns/fb#")
 //if IE 9
-html.lt-ie9(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
+html.lt-ie9(lang="#{page.lang}", xmlns:fb="http://ogp.me/ns/fb#")
 // [if (gt IE 9)|!(IE)] <!
-html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
+html(lang="#{page.lang}", xmlns:fb="http://ogp.me/ns/fb#")
 	// <![endif]
 	head
 		meta(charset="utf-8")
@@ -23,9 +23,9 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		meta(name="language", content="#{page.lang}")
 		meta(name="robots", content="index,follow")
 
-		script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
-		script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-		script(type='text/javascript', src='js/ie.js?v=version')
+		script(type="text/javascript", src="js/libs/html5shiv.js?v=version")
+		script(type="text/javascript", src="js/libs/selectivizr.js?v=version")
+		script(type="text/javascript", src="js/ie.js?v=version")
 
 		meta(name="geo.region", content="PE-LIM")
 		meta(name="geo.placename", content="Cercado de Lima")
@@ -40,9 +40,9 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		link(href="#{page.favicon}", rel="icon", type="image/vnd.microsoft.icon")
 		link(href="#{page.favicon}", rel="shortcut icon", type="image/x-icon")
 
-		script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
-		script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-		script(type='text/javascript', src='js/ie.js?v=version')
+		script(type="text/javascript", src="js/libs/html5shiv.js?v=version")
+		script(type="text/javascript", src="js/libs/selectivizr.js?v=version")
+		script(type="text/javascript", src="js/ie.js?v=version")
 
 		meta(name="DC.Title", content="#{page.title}")
 		meta(name="DC.Creator", content="#{page.name}")
@@ -52,21 +52,21 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		meta(name="DC.Language", content="#{page.lang}")
 
 		//if lt IE 9
-			script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
-			script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-			script(type='text/javascript', src='js/ie.js?v=version')
+			script(type="text/javascript", src="js/libs/html5shiv.js?v=version")
+			script(type="text/javascript", src="js/libs/selectivizr.js?v=version")
+			script(type="text/javascript", src="js/ie.js?v=version")
 
-		link(href='css/layout.css?v=version', rel='stylesheet', type='text/css')
-		link(href='css/portada.css?v=version', rel='stylesheet', type='text/css')
+		link(href="css/layout.css?v=version", rel="stylesheet", type="text/css")
+		link(href="css/portada.css?v=version", rel="stylesheet", type="text/css")
 
 		//- open graph
-		meta(property='og:title', content='#{page.title}')
-		meta(property='og:description', content='#{page.description}')
-		meta(property='og:image', content='#{page.img}')
+		meta(property="og:title", content="#{page.title}")
+		meta(property="og:description", content="#{page.description}")
+		meta(property="og:image", content="#{page.img}")
 
 		//- Favicon
-		//-link(rel='apple-touch-icon', href='img/favicon-iphone.png')
-		link(href='img/favicon.ico', rel='shortcut icon', type='image/x-icon')
+		//-link(rel="apple-touch-icon", href="img/favicon-iphone.png")
+		link(href="img/favicon.ico", rel="shortcut icon", type="image/x-icon")
 	body
 		include partials/header.jade
 		#wrapper
