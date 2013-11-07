@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/rework');
+module.exports = require('./lib/jadeflux');
