@@ -1,7 +1,14 @@
+var express = require('express');
+var http = require('http');
 
-var arr = ['foo', 'bar'];
+var app = express();
 
-for (var i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-  arr.push('hey')
+var n = 50;
+
+while (n--) {
+  app.use(function(req, res, next){
+    next();
+  });
 }
+
+http.createServer(app).listen(3000);
